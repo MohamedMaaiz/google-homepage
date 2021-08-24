@@ -10,7 +10,7 @@ a:link, a:visited {
 }
 
 .dotMenu {
-    padding: 2% 2% 2% 2%;
+    padding: 2px 2px 2px 2px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -18,11 +18,17 @@ a:link, a:visited {
     width: 18px;
 }
 
-.dotMenu:hover {
+.dmCenter {
+    display: block;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+.dmBack:hover {
     background-color: #9c9c9c42;
-    border-radius: 100%;
-    border-width: 1%;
-    border-start-end-radius: 2%;
+    border-radius: 100px;
+    height: 35px;
+    width: 35px;
 }
 
 .menuDot {
@@ -39,6 +45,7 @@ a:hover {
 .pp {
     border-radius: 100%;
     width: 35px;
+    margin-left: 15px;
 }
 
 .pp:hover {
@@ -46,9 +53,11 @@ a:hover {
 }
 
 .buttons {
-    padding-top: 2%;
+    padding-top: 10px;
     padding-right: 1rem;
 }
+
+/* middle part */
 
 .mid {
     display: block;
@@ -100,4 +109,73 @@ input:focus {
     width: 24px;
     vertical-align: middle;
     padding-right: 10px;
+}
+
+.twoButtons {
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.bBorder {
+    margin: 6px;
+}
+
+.sButton, .lButton {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    padding: 9px 17px 9px 17px;
+    border-radius: 4px;
+}
+
+.sButton:hover, .lButton:hover{
+    box-shadow: 0 1px 2px 0 #adadad67;
+    border: 1px solid #adadad67;
+}
+
+/* bottom par */
+
+.bot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1e0;
+}
+
+.bTop {
+    padding: 15px 30px 15px 30px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.tList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.bList {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.lItem {
+    padding: 15px;
 }
